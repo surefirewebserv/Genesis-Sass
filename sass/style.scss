@@ -3,16 +3,16 @@
 @import "mixins"; // Modify this for custom functions and actions etc
 @import "golden-ratio"; // Golden Ratio Typography
 @import "google-web-font"; // Google Web Fonts
+@import "compass";
+@import "compass/css3";
 
 /*
-    Theme Name: Genesis Sample
-    Description: This is the sample theme created for the Genesis Framework.
-    Author: StudioPress
-    Author URI: http://www.studiopress.com/
+    Theme Name: Genesis Sandbox
+    Description: This is a start kit for to devevelop your own themes for the Genesis Framework
+    Author: Jonathan Perez
+    Author URI: http://www.surefirewebservices.com/
  
     Version: 1.9
- 
-    Tags: black, orange, white, one-column, two-columns, three-columns, fixed-width, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
  
     Template: genesis
     Template Version: 1.9
@@ -25,38 +25,37 @@
 /* Table of Contents
 
     01 Import Fonts
-    02 Defaults
-    03 Typography
-        - Font Color
-        - Font Family
-        - Font Size
-        - Font Miscellaneous
-    04 Layout
-        - Structure
-        - 1152px CSS Grid
-        - Header
-        - Main Content
-        - Post Info & Meta
-        - Column Classes
-        - Miscellaneous
-    05 Menus
-        - Primary Navigation Extras
-    06 Headings
-    07 Lists
-    08 Post Navigation
-    09 Comments
-    10 Sidebars
-    11 Footer
-        - Footer Widgets
-    12 Forms & Buttons
-        - Gravity Forms
-    13 Images & Captions
-    14 Media Queries
-        - max-width: 1024px
-        - max-width: 768px
-        - max-width: 480px
-
+    02 Base Styles 
+        Defaults
+        Wraps
+        Containers and Columns
+        Entry Content Structure
+        Headings and Titles
+  -- Layout --  
+    03 Header
+    04 Navigation
+       Primary Navigation Extras
+       Post Navigation
+    05 Meta and Comments
+        Post Info and Meta
+        Comments
+    06 Post Content Styles
+        Block Quotes
+        Lists
+    07 SideBar
+    08 SideBar Alt
+    09 Footer
+        Footer Widgets
+        Footer Navigation
+  -- Modules --
+    10 Forms and Buttons
+    11 Images and Captions
+    12 Author Box / Bread Crumbs / Sticky
+    13 Widgets/Plugins
+        eNews
+        Gravity Forms
 */
+
 
 /*
 01 Import Fonts
@@ -64,66 +63,79 @@
 @include web-font((Lato), (Normal), (latin), (), ());
 
 /*
-02 Defaults
+02 Base Styles
 ---------------------------------------------------------------------------------------------------- */
-@import "defaults";
+@import "01defaults";
+@import "02layout-grid";
+@import "03headings";
+
+
+/*********************************************************************************************
+
+            LAYOUT
+
+**********************************************************************************************/
 
 /*
-03 Typography
-------------------------------------------------------------------------------------------------------- */
-@import "typography";
+03 Header
+---------------------------------------------------------------------------------------------------- */
+@import "04header";
 
 /*
-04 Layout
+04 Navigation
 ---------------------------------------------------------------------------------------------------- */
-@import "layout";
+@import "05navigation";
 
 /*
-05 Menus
+05 Meta and Comments
 ---------------------------------------------------------------------------------------------------- */
-@import "menus";
+@import "06meta-comments";
 
 /*
-06 Headings
+06 Post Content Styles
 ---------------------------------------------------------------------------------------------------- */
-@import "headings";
+@import "07entrycontent";
 
 /*
-07 Lists
+07 Sidebar
 ---------------------------------------------------------------------------------------------------- */
-@import "lists";
+@import "08sidebar";
 
 /*
-08 Post Navigation
+08 Sidebar Alt
 ---------------------------------------------------------------------------------------------------- */
-@import "post-navigation";
+@import "09sidebaralt";
 
 /*
-09 Comments
+09 Footer
 ---------------------------------------------------------------------------------------------------- */
-@import "comments";
+@import "10footer";
+
+
+
+/*********************************************************************************************
+
+            MODULES
+
+**********************************************************************************************/
+
 
 /*
-10 Sidebars
+10 Forms and Buttons
 ---------------------------------------------------------------------------------------------------- */
-@import "sidebars";
+@import "11forms-buttons";
 
 /*
-11 Footer
+11 Images and Captions
 ---------------------------------------------------------------------------------------------------- */
-@import "footer";
+@import "12images-captions";
 
 /*
-12 Forms & Buttons
+12 Author Box / Bread Crumbs / Sticky
 ---------------------------------------------------------------------------------------------------- */
-@import "forms-buttons";
+@import "13author-sticky-bread";
 
 /*
-13 Images & Captions
+13 Widgets/Plugins
 ---------------------------------------------------------------------------------------------------- */
-@import "images-captions";
-
-/*
-14 Media Queries
----------------------------------------------------------------------------------------------------- */
-@import "media-queries";
+@import "14widgets-plugins";
