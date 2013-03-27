@@ -1,23 +1,12 @@
 === Genesis Sample Theme with Sass ===
 
-Just the Genesis Sample Theme built using Sass and the Golden Ratio
-
-Demo link: http://genesis.gregrickaby.com
+Currently this is the Genesis Sample Theme built using Sass and the Golden Ratio but it will soon be migrated over to the Sandbox Starter Theme.
 
 === Changelog ===
 
-0.2 - 2013.02.25
-
-- Fixed missing Google Font import
-- Fixed code indentation
-- Fixed inconsistant $contentWidth capitalization
-- Changed body background-color to $bodyBackground
-- Changed default text to $textColor
-
-0.1 - 2013.02.24
-
-- Initial release
-
+0.1 - 3.27.2013
+	- Initial Release
+	- Still Needs to be tested
 
 === Installation Instructions ===
 
@@ -26,10 +15,12 @@ Demo link: http://genesis.gregrickaby.com
 3. Activate the Genesis Sample theme.
 4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
 
-
 === Sass Developer Info ===
 
-Name: Greg Rickaby
-Website: http://gregrickaby.com
-Twitter: http://twitter.com/gregrickaby
-Github project link: https://github.com/gregrickaby/Genesis-Sass
+Name: Jonathan Perez
+Website: http://surefirewebservices.com
+Twitter: http://twitter.com/surefirewebserv
+
+=== Contributors ===
+
+Thank you to Greg Rickaby for his initial project which I forked.  https://github.com/gregrickaby/Genesis-Sass Saved me tons of time! 
