@@ -11,58 +11,54 @@
 		margin-bottom: 16px;
 		@include rem(margin-bottom, 16);
 		font-family: $googleFont, $googleFontType;
-		font-weight: $googleFontWeight;
+		font-weight: 700;
 	}
 
-	#title,
-	.title {
-		@include sfFontSize(42);
-	}
+	
 
 	h1,
 	.entry-title,
 	.entry-title a {
-		@include grHeadlineSize();
+		@include sfFontSize(32);
 	}
 
+	/* Title Class for SEO / No Overuse of H Tags */
+	.title,
 	h2 {
-		@include grSubHeadlineSize();
+		@include sfFontSize(28);
 	}
 
 	h2 a,
 	h2 a:visited {
-		color: $color-secondary;
-		&:hover { color: $red; }
+		color: $color-extra;
+		&:hover { color: shade($color-cta, 30%); }
 	}
 
 
 	h3 {
 		@include sfFontSize(24);
-		@include grCustomLineHeight(24);
 	}
 
 	h4,
 	.archive-title,
 	.taxonomy-description h1,
 	.widgettitle {
-		@include sfFontSize(42);
-		@include grCustomLineHeight(20);
+		@include sfFontSize(20);
 	}
 
 	h4.widgettitle a {
-		color:$red;
+		color:$color-cta;
 	}
 
 	h5 {
-		@include grFontSize();
+		@include sfFontSize(18);
 	}
 
 	h6,
 	.author-box h1,
 	.sidebar h2 a {
-		@include grSecondaryText();
+		@include sfFontSize(14);
 	}
-
 
 	.author-box h1 {
 		margin: 0;

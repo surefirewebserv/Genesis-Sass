@@ -27,15 +27,11 @@
   }
   body {
     background-color: $light;
-    @include grBaseLineHeight();
-    font-family: $baseFontFamily;
-  }
-
-  p {
     @include grFontSize();
     @include grBaseLineHeight();
-    font-family: $baseFontFamily; 
-    color: #333;
+    font-family: $baseFontFamily;
+    color: $textColor;
+
   }
 
   p.pages,
@@ -77,9 +73,9 @@
   }
 
   a {
-  	color: $color-primary;
+  	color: $color-cta;
   	text-decoration:none;
-    &:hover { color: shade($color-primary, 30%); }
+    &:hover { color: shade($color-cta, 30%); }
   }
 
   a img {
