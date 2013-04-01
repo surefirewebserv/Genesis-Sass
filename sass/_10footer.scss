@@ -32,29 +32,23 @@
 		overflow: hidden;
 		padding: 32px 0 16px;
 		padding: cr(32) 0 cr(16);
-	
-
-		p {
-			margin-bottom: 16px;
-			@include rem(margin-bottom, 16);
-		}
-
-		.widget {
-			margin-bottom: 24px;
-			@include rem(margin-bottom, 24);
-		}
-
-		.widget-area ul li {
-			list-style-type: none;
-			margin-bottom: 6px;
-			@include rem(margin-bottom, 6);
-			word-wrap: break-word;
-		}
-
 	}
 
-	.footer-widgets .wrap > div {
-		display: table-cell;
+	.footer-widgets p {
+		margin-bottom: 16px;
+		@include rem(margin-bottom, 16);
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 24px;
+		@include rem(margin-bottom, 24);
+	}
+
+	.footer-widgets .widget-area ul li {
+		list-style-type: none;
+		margin-bottom: 6px;
+		@include rem(margin-bottom, 6);
+		word-wrap: break-word;
 	}
 
 

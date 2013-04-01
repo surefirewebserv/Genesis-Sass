@@ -30,6 +30,6 @@ button:hover,
 input:hover[type="button"],
 input:hover[type="submit"],
 .btn:hover {
-	background-color: shade($color-primary, 30%);
+	background-color: $red;
 }
 

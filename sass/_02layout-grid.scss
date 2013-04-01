@@ -2,7 +2,6 @@
 
 	#wrap {
 	  width: 100%;
-
 	}
 
 	.wrap {
@@ -12,26 +11,25 @@
 
 	#inner {
 		@include clearfix;
-		padding-top:20px;
-		@include rem(padding-top, 20);
+		padding-top:40px;
+		@include rem(padding-top, 40);
 	}
 	
 
 /* Containers and Columns */
 
 	.content-sidebar-sidebar #sidebar-alt,
+	.sidebar,
 	.sidebar-content #content,
 	.sidebar-content-sidebar #content-sidebar-wrap,
 	.sidebar-sidebar-content #content,
 	.sidebar-sidebar-content #content-sidebar-wrap,
 	#footer .creds,
-	#header .widget-area,
-	.sidebar-content-sidebar #sidebar {
+	#header .widget-area {
 		float: right;
 	}
 
 	.five-sixths,
-	.content-sidebar-sidebar #sidebar,
 	.four-fifths,
 	.four-sixths,
 	.one-fifth,
@@ -48,41 +46,31 @@
 	.two-thirds,
 	.sidebar-content #sidebar,
 	.sidebar-sidebar-content #sidebar,
-	.content-sidebar-sidebar #content,
+	#content,
+	#content-sidebar-wrap,
 	#footer .gototop,
 	#sidebar-alt,
 	#title-area,
-	.archive-page,
-	.content-sidebar #content,
-	.content-sidebar #sidebar,
-	.sidebar-content-sidebar #sidebar-alt,
-	.content-sidebar-sidebar #content,
-	.sidebar-content-sidebar #content
-	{
+	.archive-page {
 		float: left;
 		margin-left: percentage(48px / 1152px); /* 48px / 1152px */
 	}
-
-
 
 	.one-half,
 	.three-sixths,
 	.two-fourths,
 	.content-sidebar-sidebar #content,
-	.archive-page,
-	#header .widget-area,
-	#title-area
-	 {
+	.sidebar-content-sidebar #content,
+	.sidebar-sidebar-content #content,
+	.archive-page {
 		width: percentage(552px / 1152px); /* 552px / 1152px */
 	}
 
 	.one-third,
 	.two-sixths,
-	.content-sidebar #sidebar,
-	.sidebar-content #sidebar,
-	.content-sidebar-sidebar #sidebar,
-	.sidebar-content-sidebar #sidebar,
-	.sidebar-sidebar-content #sidebar {
+	.content-sidebar-sidebar .sidebar,
+	.sidebar-content-sidebar .sidebar,
+	.sidebar-sidebar-content .sidebar {
 		width: percentage(352px / 1152px); /* 352px / 1152px */
 	}
 
@@ -90,8 +78,7 @@
 	.two-thirds,
 	.content-sidebar #content,
 	.sidebar-content #content,
-	.sidebar-content-sidebar #content,
-	.sidebar-sidebar-content #content {
+	#title-area {
 		width: percentage(752px / 1152px); /* 752px / 1152px */
 	}
 
@@ -107,7 +94,9 @@
 		width: percentage(192px / 1152px); /* 192px / 1152px */
 	}
 
-	.two-fifths{
+	.two-fifths,
+	.sidebar,
+	#header .widget-area {
 		width: percentage(432px / 1152px); /* 432px / 1152px */
 	}
 
@@ -124,37 +113,18 @@
 		width: percentage(152px / 1152px); /* 152px / 1152px */
 	}
 
-	.five-sixths,
-	.sidebar-content-sidebar #content-sidebar-wrap,
-	.sidebar-sidebar-content #content-sidebar-wrap {
+	.five-sixths {
 		width: percentage(952px / 1152px); /* 952px / 1152px */
 	}
 
 	.first, 
 	.content-sidebar-sidebar #content,
-	.sidebar-content-sidebar #sidebar-alt,
+	.sidebar-content-sidebar #sidebar,
 	.sidebar-sidebar-content #sidebar-alt,
-	#title-area,
-	.content-sidebar #content,
-	.sidebar-content #sidebar,
-	.sidebar-content-sidebar #content,
-	.sidebar-sidebar-content #sidebar {
+	.archive-page {
 		margin-left: 0;
 		clear:both;
 	}
-
-	.sidebar-content #sidebar,
-	.sidebar-content-sidebar #sidebar-alt,
-	.sidebar-sidebar-content #sidebar-alt,
-	.sidebar-sidebar-content #sidebar {
-		clear: none;
-	}
-
-	.archive-page {
-		margin-left:0;
-	}
-
-
 
 /* Entry Content Structure */
 
