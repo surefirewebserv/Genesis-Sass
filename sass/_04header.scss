@@ -9,7 +9,13 @@
 #title {
 	margin: 40px 0 8px;
 	margin: cr(40) 0 cr(8) 0;
+	@include sfFontSize(48);
+	a {
+		color:$dark;
+		&:hover { color: $color-cta; }
+	}
 }
+
 
 .header-image #title {
 	margin: 0;
