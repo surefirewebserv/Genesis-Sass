@@ -1,7 +1,6 @@
 .genesis-nav-menu {
 	clear: both;
 	overflow: hidden;
-	@include grFontSize();
 }
 
 #header .genesis-nav-menu {
@@ -11,102 +10,129 @@
 	width: auto;
 }
 
-.genesis-nav-menu.menu-primary,
+
+#nav {
+	background-color: $color-extra;
+}
+
+.genesis-nav-menu.menu-primary {
+
+	a {
+		color: $light;
+			&:hover { color: $color-cta; }
+	}
+
+	li.highlight-menu-item {
+		margin-left: 20px;
+		@include rem(margin-left, 20);
+	}
+
+	.highlight-menu-item a {
+		background-color: $color-cta;
+		color: $light;
+	}
+
+	.highlight-menu-item a:hover {
+		background-color: $light;
+		color: $dark;
+	}
+
+	li ul {
+        background:$color-extra; 
+    }
+
+    li ul a {     
+        border:1px solid tint($color-extra, 30%);
+    }
+
+    li ul a {
+        background: none;
+        margin-right: 0;
+        width: 200px;        
+    }
+
+    li ul a:first-child {
+		border-top: none;
+    }
+
+
+}
+
 .genesis-nav-menu.menu-secondary {
-	border-bottom: 1px solid #ccc;
+
+	a {
+	color:$dark;
+		&:hover {color: $color-cta; }
+	}
+
+	li ul {
+        background:$light;       	
+	}
+
+	li ul a {
+        border:1px solid tint($color-extra, 30%);
+    }
+
+    li ul a {
+        background: none;
+        margin-right: 0;
+        width: 200px;        
+    }
+
+    li ul a:first-child {
+		border-top: none;
+    }
+
+
 }
 
-.genesis-nav-menu ul {
-	float: left;
-	width: 100%;
+.genesis-nav-menu {
+	
+	ul {
+		float: left;
+		width: 100%;
+	}
+
+	li {
+		display: inline-block;
+		float: left;
+		list-style-type: none;
+		text-align: left;
+	}
+
+	a {
+		display: block;
+		padding: 24px 20px;
+		padding: cr(24) cr(20);
+		position: relative;
+	}
+
+	li ul {        
+        left: -999em;
+        margin: -1px 0 0;
+        position: absolute;
+        width: 200px;
+        z-index: 9999;
+       	
+	}
+
+	li:hover ul {
+	   left: auto;
+	}
+
+	li li ul {
+        margin: -1px 0 0 199px;
+        display:none;
+	}
+
+	li li:hover > ul {
+        display:block;
+        margin-top:-71px;        
+	}
+
 }
 
-.genesis-nav-menu li {
-	display: inline-block;
-	float: left;
-	list-style-type: none;
-	text-align: left;
-}
 
-.genesis-nav-menu a {
-	display: block;
-	padding: 24px 20px;
-	padding: cr(24) cr(20);
-	position: relative;
-}
-
-.genesis-nav-menu li.highlight-menu-item {
-	margin-left: 20px;
-	@include rem(margin-left, 20);
-}
-
-.genesis-nav-menu .highlight-menu-item a {
-	background-color: $light;
-}
-
-.genesis-nav-menu .highlight-menu-item a:hover {
-	background-color: $red;
-}
-
-.genesis-nav-menu li li a,
-.genesis-nav-menu li li a:link,
-.genesis-nav-menu li li a:visited {
-	background-color: $light;
-	border: 1px solid #ccc;
-	border-top: none;
-	padding: 20px;
-	@include rem(padding, 20);
-	position: relative;
-	width: 170px;
-}
-
-.genesis-nav-menu li ul {
-	left: -9999px;
-	position: absolute;
-	width: 212px;
-	z-index: 99;
-}
-
-.genesis-nav-menu li ul ul {
-	margin: -55px 0 0 211px;
-}
-
-.genesis-nav-menu li:hover ul ul,
-.genesis-nav-menu li.sfHover ul ul {
-	left: -9999px;
-}
-
-.genesis-nav-menu li:hover,
-.genesis-nav-menu li.sfHover {
-	position: static;
-}
-
-ul.genesis-nav-menu li:hover>ul,
-ul.genesis-nav-menu li.sfHover ul,
-#header .genesis-nav-menu li:hover>ul,
-#header .genesis-nav-menu li.sfHover ul {
-	left: auto;
-}
-
-.genesis-nav-menu li a .sf-sub-indicator,
-.genesis-nav-menu li li a .sf-sub-indicator,
-.genesis-nav-menu li li li a .sf-sub-indicator {
-	position: absolute;
-	text-indent: -9999px;
-}
-
-#wpadminbar li:hover ul ul {
-	left: 0;
-}
-
-/*.genesis-nav-menu .highlight-menu-item a,
-.genesis-nav-menu .highlight-menu-item a:hover,
-.navigation li a,
-.navigation li a:hover,
-.navigation li.active a,
-.navigation li.disabled {
-	color: $white;
-}*/
 
 
 /*  Primary Navigation Extras */
@@ -142,7 +168,7 @@ ul.genesis-nav-menu li.sfHover ul,
 	}
 
 
-/* Post Navigation 
+/* Pagination */ 
 
 	.navigation li {
 		display: inline;
@@ -152,17 +178,17 @@ ul.genesis-nav-menu li.sfHover ul,
 	.navigation li a:hover,
 	.navigation li.active a,
 	.navigation li.disabled {
-		background-color: $grayDarker;
+		background-color: tint($dark, 30%);
 		border-radius: 3px;
 		cursor: pointer;
 		padding: 12px;
 		@include rem(padding, 12);
+		color:$light;
 	}
 
 	.navigation li a:hover,
 	.navigation li.active a {
-		background-color: $red;
-	}*/
-
-
+		background-color: $light;
+		color:$dark;
+	}
 
