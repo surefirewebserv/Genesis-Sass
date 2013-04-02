@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Lato:Normal&subset=latin);
+@import url(//fonts.googleapis.com/css?family=Arimo|Varela);
 /*
     Theme Name: Genesis Sandbox
     Description: This is a start kit for to devevelop your own themes for the Genesis Framework
@@ -374,7 +374,7 @@ h6,
   line-height: 1.2;
   margin-bottom: 16px;
   margin-bottom: 0.94118rem;
-  font-family: Lato, Open Sans, sans-serif;
+  font-family: Arimo, Varela, sans-serif;
   font-weight: 700;
 }
 
@@ -468,47 +468,48 @@ h6,
 /* line 1, sass/_04header.scss */
 #header {
   border-bottom: 2px solid #1e1e1e;
+  border-top: 5px solid #3b3d42;
   min-height: 120px;
   overflow: hidden;
   padding-bottom: 32px;
   padding-bottom: 1.88235rem;
 }
 
-/* line 9, sass/_04header.scss */
+/* line 10, sass/_04header.scss */
 #title {
   margin: 40px 0 8px;
   margin: 2.35294rem 0 0.47059rem 0;
   font-size: 48px;
   font-size: 2.82353rem;
 }
-/* line 13, sass/_04header.scss */
+/* line 14, sass/_04header.scss */
 #title a {
-  color: #000d11;
+  color: #3b3d42;
 }
-/* line 15, sass/_04header.scss */
+/* line 16, sass/_04header.scss */
 #title a:hover {
   color: #c45a3f;
 }
 
-/* line 20, sass/_04header.scss */
+/* line 21, sass/_04header.scss */
 .header-image #title {
   margin: 0;
 }
 
-/* line 24, sass/_04header.scss */
+/* line 25, sass/_04header.scss */
 #description {
   line-height: 1.25;
   color: #3b3d42;
 }
 
-/* line 32, sass/_04header.scss */
+/* line 33, sass/_04header.scss */
 .header-full-width #title,
 .header-full-width #title a,
 .header-full-width #title-area {
   width: 100%;
 }
 
-/* line 38, sass/_04header.scss */
+/* line 39, sass/_04header.scss */
 .header-image #title,
 .header-image #title a,
 .header-image #title-area {
@@ -520,12 +521,12 @@ h6,
   width: 50%;
 }
 
-/* line 47, sass/_04header.scss */
+/* line 48, sass/_04header.scss */
 .header-image #description {
   display: none;
 }
 
-/* line 51, sass/_04header.scss */
+/* line 52, sass/_04header.scss */
 #header .search-form {
   float: right;
   margin-top: 56px;

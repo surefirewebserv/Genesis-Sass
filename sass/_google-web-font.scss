@@ -15,7 +15,7 @@
 // @since 1.0
 // @link https://github.com/rosspenman/web-fonts.scss
 //
-// Usage: @include web-font((Tangerine, Open Sans), (italic, bold), (latin, cyrillic), ('thisismytext'), (shadow multiple, float 3d));
+// Usage: @include web-font((Tangerine, Open Sans), (italic bold, bold), (latin, cyrillic), ('thisismytext'), (shadow multiple, float 3d));
 // ----------------------------------
 @mixin web-font($fonts, $variants: (), $subsets: (), $text: '', $effects: ()) {
   $url: "//fonts.googleapis.com/css?family=";
@@ -81,7 +81,7 @@
   
   // Add the text argument to the URL string, if it exists.
   // $text does not actually need to be enclosed in brackets.
-  @if length($text) > 0 or $text == '' {
+  @if length($text) > 0 and $text != '' {
     
     // To save the user the hassle of adding a space character every time they want
     // to use a web font, we add one automatically.
